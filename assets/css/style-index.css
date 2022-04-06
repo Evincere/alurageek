@@ -1,0 +1,146 @@
+body {
+    width: 1440px;
+    background-color: #111927;
+    background-image: radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+}
+
+.encabezado {
+    width: 100%;
+}
+
+.interno,
+.container-interno,
+.logo-buscador,
+.container-logo,
+.boton-login,
+.boton-login-texto,
+.container-buscador,
+.form-buscador {
+    display: flex;
+}
+
+.container-interno {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1136px;
+    height: 115px;
+}
+
+.logo-buscador {
+    width: 601px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logo {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 24px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40.02px;
+    top: 10.42px;
+    left: 4.99px;
+}
+
+.texto-logo {
+    font-weight: 700;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.69);
+}
+
+.resaltado-alura {
+    color: blue;
+}
+
+.container-buscador {
+    margin-left: 32px;
+    border-radius: 15px;
+    box-shadow: 9px 6px 23px 2px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 9px 6px 23px 2px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 9px 6px 23px 2px rgba(0, 0, 0, 0.88);
+}
+
+.form-buscador {
+    width: 393px;
+    height: 40px;
+}
+
+.buscador,
+.boton-buscar {
+    border: 0;
+}
+
+.buscador {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 16px;
+    border-radius: 20px 0 0 20px;
+    padding: 8px 16px 8px 16px;
+}
+
+.boton-buscar {}
+
+.boton-login-texto {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    width: 182px;
+    height: 51px;
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+    box-shadow: 9px 6px 23px 2px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 9px 6px 23px 2px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 9px 6px 23px 2px rgba(0, 0, 0, 0.88);
+}
+
+
+/* From cssbuttons.io */
+
+.button-efecto {
+    --glow-color: rgb(62, 99, 76);
+    --glow-spread-color: rgba(13, 100, 71, 0.781);
+    --enhanced-glow-color: rgb(20, 167, 81);
+    --btn-color: rgb(142, 218, 186);
+    border: .2em solid var(--glow-color);
+    color: var(--glow-color);
+    font-weight: bold;
+    background-color: var(--btn-color);
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    transition: all 0.3s;
+    border-radius: 0 15px 15px 0;
+    padding: 0.5em 1em;
+}
+
+.button-efecto::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.button-efecto:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+}
+
+.button-efecto:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 .5em .25em var(--glow-color);
+}
